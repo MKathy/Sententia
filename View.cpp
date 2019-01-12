@@ -1,8 +1,6 @@
 #include "View.h"
 #include <iostream>
 
-using namespace std;
-
 View::View() : selected_menu(MAIN_MENU)
 {
     Menu main_menu;

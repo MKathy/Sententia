@@ -1,8 +1,6 @@
 #include "Controller.h"
 #include <iostream>
 
-using namespace std;
-
 Controller::Controller()= default;
 
 void Controller::run()
@@ -13,9 +11,11 @@ void Controller::run()
         view.show_selected_menu();
         int response = action_response();
 
-        switch(view.get_selected_menu()) {
+        switch(view.get_selected_menu())
+        {
         case MAIN_MENU:
-            switch(response) {
+            switch(response)
+            {
             case 1:
                 view.set_selected_menu(DISPLAY_SENTENTIA_MENU);
                 break;
@@ -25,15 +25,15 @@ void Controller::run()
                 exit(0);
                 break;
             default:
-                cout << endl << "There is no such a option.";
+                cout << endl << "There is no such option in the menu.";
                 Sleep(1000);
                 break;
             }
             break;
         case DISPLAY_SENTENTIA_MENU:
-            switch(response) {
+            switch(response)
+            {
             case 1:
-
                 break;
             case 2:
                 break;
@@ -41,6 +41,8 @@ void Controller::run()
                 view.set_selected_menu(MAIN_MENU);
                 break;
             default:
+                cout << endl << "There is no such option in the menu.";
+                Sleep(1000);
                 break;
             }
             break;

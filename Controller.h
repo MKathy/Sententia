@@ -2,8 +2,6 @@
 #define CONTROLLER_H
 #include "View.h"
 
-using namespace std;
-
 class Controller
 {
     View view;

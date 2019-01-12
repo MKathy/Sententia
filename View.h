@@ -6,8 +6,6 @@
 #include "SelectedMenu.h"
 #include "Menu.h"
 
-using namespace std;
-
 class View
 {
     map <SelectedMenu, Menu> menus;
