@@ -1,0 +1,11 @@
+### CodeBlocks ###
+# specific to CodeBlocks IDE
+*.layout
+*.depend
+*.o
+*.exe
+*.cbp
+
+# generated directories
+bin/
+obj/
